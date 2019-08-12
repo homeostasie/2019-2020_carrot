@@ -28,8 +28,8 @@ img: $(FIGOBJ)
 # Chapitre 1 - Probabilité
 
 3x1:
-	pdflatex 3x1-proba/3x1-proba.tex
-	pdflatex 3x1-proba/3x1-proba.tex
+	pdflatex 3x1-probabilite/3x1-proba.tex
+	pdflatex 3x1-probabilite/3x1-proba.tex
 	mv 3x1-proba.pdf '$(PDFDIR)'/3x1-proba.pdf
 	
 
