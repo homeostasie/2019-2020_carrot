@@ -31,13 +31,13 @@
 * Chapitre 6 - Théorème de Pythagore *-(2.5s)-*
 * Chapitre 7 - Calcul littéral : dev, factorisation, évaluer *-(2s)-*
 * Chapitre 8 - Proporionnalité : pourcentage, echelle, vitesse moyenne *-(2s)-*
-* Chapitre 9 - Translation, rotation *-(2s)-*
+* Chapitre 9 - Transformations du plan : Translation, rotation *-(2s)-*
 * Chapitre 10 - Calcul littéral : equations, problème *-(2.5s)-*
 * Chapitre 11 - Statistitiques *-(2s)-*
 * Chapitre 12 - Cosinus *-(1.5s)-*
-* Chapitre 13 - Probabilités *-(1s)-*
-* Chapitre 14 - Repérage espace *-(1.5s)-*
-* Chapitre 15 - Cônes, Pyramides *-(1.5s)-*
+* Chapitre 13 - Probabilité *-(1s)-*
+* Chapitre 14 - Espace : repérage *-(1.5s)-*
+* Chapitre 15 - Espace : Solides *-(1.5s)-*
 
 * Chapitre Algorithmie - Boubles simples et conditionnelles *-(fil)-*
 
