@@ -35,9 +35,17 @@ img: $(FIGOBJ)
 3x1-ie:
 	pdflatex 3x1-probabilite/3x1-proba-ie.tex
 	pdflatex 3x1-probabilite/3x1-proba-ie.tex
-	mv 3x1-proba-ie.pdf '$(PDFDIR)'/3x1-proba-ie.pdf	
-	
+	mv 3x1-proba-ie.pdf '$(PDFDIR)'/3x1-proba-ie.pdf
 
+3x1-exo:
+	pdflatex 3x1-probabilite/3x1-exercices.tex
+	pdflatex 3x1-probabilite/3x1-exercices.tex
+	mv 3x1-exercices.pdf '$(PDFDIR)'/3x1-exercices.pdf
+	
+3x1-pb:
+	pdflatex 3x1-probabilite/3x1-problemes.tex
+	pdflatex 3x1-probabilite/3x1-problemes.tex
+	mv 3x1-problemes.pdf '$(PDFDIR)'/3x1-problemes.pdf
 
 # nettoyage			
 proper:
