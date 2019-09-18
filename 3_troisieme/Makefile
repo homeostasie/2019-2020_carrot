@@ -31,6 +31,11 @@ img: $(FIGOBJ)
 	pdflatex 3x1-probabilite/3x1-proba.tex
 	pdflatex 3x1-probabilite/3x1-proba.tex
 	mv 3x1-proba.pdf '$(PDFDIR)'/3x1-proba.pdf
+
+3x1-ie:
+	pdflatex 3x1-probabilite/3x1-proba-ie.tex
+	pdflatex 3x1-probabilite/3x1-proba-ie.tex
+	mv 3x1-proba-ie.pdf '$(PDFDIR)'/3x1-proba-ie.pdf	
 	
 
 
