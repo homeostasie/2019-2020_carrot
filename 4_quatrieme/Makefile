@@ -30,12 +30,15 @@ img: $(FIGOBJ)
 
 # Chapitre 1 - Nombres relatifs 1
 
-4x1:
+1_cours:
 	pdflatex 4x1-nombres-relatifs-1/4x1-nombres-relatifs-1.tex
 	pdflatex 4x1-nombres-relatifs-1/4x1-nombres-relatifs-1.tex
 	mv 4x1-nombres-relatifs-1.pdf '$(PDFDIR)'/4x1-nombres-relatifs-1.pdf
 	
-
+1_ie:
+	pdflatex 4x1-nombres-relatifs-1/4x1-nombres-relatifs-1-ie.tex
+	pdflatex 4x1-nombres-relatifs-1/4x1-nombres-relatifs-1-ie.tex
+	mv 4x1-nombres-relatifs-1-ie.pdf '$(PDFDIR)'/4x1-nombres-relatifs-1-ie.pdf
 
 # nettoyage			
 proper:
