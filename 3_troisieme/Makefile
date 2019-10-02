@@ -52,6 +52,13 @@ img: $(FIGOBJ)
 	pdflatex 3x1-probabilite/3x1-problemes.tex
 	mv 3x1-problemes.pdf '$(PDFDIR)'/3x1-problemes.pdf
 
+# Chapitre 2 - Calcul littéral
+
+3x2-dm:
+	pdflatex 3x2-calcul-litteral-1/3x2-calcul-litteral-dm.tex
+	pdflatex 3x2-calcul-litteral-1/3x2-calcul-litteral-dm.tex
+	mv 3x2-calcul-litteral-dm.pdf '$(PDFDIR)'/3x2-calcul-litteral-dm.pdf	
+
 # nettoyage			
 proper:
 	rm -f *.log *.toc *.aux *.nav *.snm *.out *.bbl *.blg *.dvi
