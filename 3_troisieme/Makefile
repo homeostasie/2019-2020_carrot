@@ -62,7 +62,12 @@ img: $(FIGOBJ)
 3x2-dm:
 	pdflatex 3x2-calcul-litteral-1/3x2-calcul-litteral-dm.tex
 	pdflatex 3x2-calcul-litteral-1/3x2-calcul-litteral-dm.tex
-	mv 3x2-calcul-litteral-dm.pdf '$(PDFDIR)'/3x2-calcul-litteral-dm.pdf	
+	mv 3x2-calcul-litteral-dm.pdf '$(PDFDIR)'/3x2-calcul-litteral-dm.pdf
+
+3x2-drill:
+	pdflatex 3x2-calcul-litteral-1/3x2-calcul-litteral-drill.tex
+	pdflatex 3x2-calcul-litteral-1/3x2-calcul-litteral-drill.tex
+	mv 3x2-calcul-litteral-drill.pdf '$(PDFDIR)'/3x2-calcul-litteral-drill.pdf		
 
 # nettoyage			
 proper:
