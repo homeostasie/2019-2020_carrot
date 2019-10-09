@@ -54,6 +54,11 @@ img: $(FIGOBJ)
 
 # Chapitre 2 - Calcul littéral
 
+3x2:
+	pdflatex 3x2-calcul-litteral-1/3x2-calcul-litteral.tex
+	pdflatex 3x2-calcul-litteral-1/3x2-calcul-litteral.tex
+	mv 3x2-calcul-litteral.pdf '$(PDFDIR)'/3x2-calcul-litteral.pdf	
+
 3x2-dm:
 	pdflatex 3x2-calcul-litteral-1/3x2-calcul-litteral-dm.tex
 	pdflatex 3x2-calcul-litteral-1/3x2-calcul-litteral-dm.tex
