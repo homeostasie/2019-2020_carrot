@@ -40,6 +40,20 @@ img: $(FIGOBJ)
 	pdflatex 4x1-nombres-relatifs-1/4x1-nombres-relatifs-1-ie.tex
 	mv 4x1-nombres-relatifs-1-ie.pdf '$(PDFDIR)'/4x1-nombres-relatifs-1-ie.pdf
 
+
+
+# Chapitre 1 - Nombres relatifs 1
+
+2_cours:
+	pdflatex 4x1-nombres-relatifs-1/4x1-nombres-relatifs-1.tex
+	pdflatex 4x1-nombres-relatifs-1/4x1-nombres-relatifs-1.tex
+	mv 4x1-nombres-relatifs-1.pdf '$(PDFDIR)'/4x1-nombres-relatifs-1.pdf
+	
+2_ie:
+	pdflatex 4x2-proportionnalite-1/4x2-proportionnalite-1-ie.tex
+	pdflatex 4x2-proportionnalite-1/4x2-proportionnalite-1-ie.tex
+	mv 4x2-proportionnalite-1-ie.pdf '$(PDFDIR)'/4x2-proportionnalite-1-ie.pdf	
+
 # nettoyage			
 proper:
 	rm -f *.log *.toc *.aux *.nav *.snm *.out *.bbl *.blg *.dvi
