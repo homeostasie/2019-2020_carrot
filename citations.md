@@ -37,11 +37,13 @@
 
 - *Un peuple prêt à sacrifier un peu de liberté pour un peu de sécurité ne mérite ni l'une ni l'autre, et finit par perdre les deux.*
 
-
 ### Victor Hugo
 
 - *Les mathématiques ne sont une moindre immensité que la mer.*
 - *Il vient une heure où protester ne suffit plus : après la philosophie, il faut l’action.*
+
+### Michael Jordan
+- *If you do the work, you get rewarded. There are no shortcuts ibn life*
 
 ### Stephen King
 
