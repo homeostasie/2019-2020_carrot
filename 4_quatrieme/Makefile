@@ -40,19 +40,19 @@ img: $(FIGOBJ)
 	pdflatex 4x1-nombres-relatifs-1/4x1-nombres-relatifs-1-ie.tex
 	mv 4x1-nombres-relatifs-1-ie.pdf '$(PDFDIR)'/4x1-nombres-relatifs-1-ie.pdf
 
+# Chapitre 2 - Proportionnalité 1
 
+# Chapitre 3 - Puissances
 
-# Chapitre 1 - Nombres relatifs 1
-
-2_cours:
-	pdflatex 4x1-nombres-relatifs-1/4x1-nombres-relatifs-1.tex
-	pdflatex 4x1-nombres-relatifs-1/4x1-nombres-relatifs-1.tex
-	mv 4x1-nombres-relatifs-1.pdf '$(PDFDIR)'/4x1-nombres-relatifs-1.pdf
+3_cours:
+	pdflatex 4x3-puissances/4x3-puissances.tex
+	pdflatex 4x3-puissances/4x3-puissances.tex
+	mv 4x3-puissances.pdf '$(PDFDIR)'/4x3-puissances.pdf
 	
-2_ie:
-	pdflatex 4x2-proportionnalite-1/4x2-proportionnalite-1-ie.tex
-	pdflatex 4x2-proportionnalite-1/4x2-proportionnalite-1-ie.tex
-	mv 4x2-proportionnalite-1-ie.pdf '$(PDFDIR)'/4x2-proportionnalite-1-ie.pdf	
+3_exo:
+	pdflatex 4x3-puissances/4x3-puissances-exo.tex
+	pdflatex 4x3-puissances/4x3-puissances-exo.tex
+	mv 4x3-puissances-exo.pdf '$(PDFDIR)'/4x3-puissances-exo.pdf
 
 # nettoyage			
 proper:
