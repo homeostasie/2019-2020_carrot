@@ -64,6 +64,11 @@ img: $(FIGOBJ)
 	pdflatex 3x2-calcul-litteral-1/3x2-calcul-litteral-dm.tex
 	mv 3x2-calcul-litteral-dm.pdf '$(PDFDIR)'/3x2-calcul-litteral-dm.pdf
 
+3x2-pi:
+	pdflatex 3x2-calcul-litteral-1/3x2-calcul-litteral-pi.tex
+	pdflatex 3x2-calcul-litteral-1/3x2-calcul-litteral-pi.tex
+	mv 3x2-calcul-litteral-pi.pdf '$(PDFDIR)'/3x2-calcul-litteral-pi.pdf	
+
 3x2-drill:
 	pdflatex 3x2-calcul-litteral-1/3x2-calcul-litteral-drill.tex
 	pdflatex 3x2-calcul-litteral-1/3x2-calcul-litteral-drill.tex
@@ -73,6 +78,21 @@ img: $(FIGOBJ)
 	pdflatex 3x2-calcul-litteral-1/3x2-calcul-litteral-ie.tex
 	pdflatex 3x2-calcul-litteral-1/3x2-calcul-litteral-ie.tex
 	mv 3x2-calcul-litteral-ie.pdf '$(PDFDIR)'/3x2-calcul-litteral-ie.pdf		
+
+
+
+# Chapitre 3 - volume
+
+3x3:
+	pdflatex 3x3-volumes-1/3x3-volumes-1.tex
+	pdflatex 3x3-volumes-1/3x3-volumes-1.tex
+	mv 3x3-volumes.pdf '$(PDFDIR)'/3x3-volumes.pdf	
+
+3x3-pb:
+	pdflatex 3x3-volumes-1/3x3-volumes-1-pb.tex 
+	pdflatex 3x3-volumes-1/3x3-volumes-1-pb.tex 
+	mv 3x3-volumes-1-pb.pdf '$(PDFDIR)'/3x3-volumes-1-pb.pdf
+
 
 # nettoyage			
 proper:
