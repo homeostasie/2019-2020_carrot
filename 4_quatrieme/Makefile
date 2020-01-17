@@ -54,6 +54,18 @@ img: $(FIGOBJ)
 	pdflatex 4x3-puissances/4x3-puissances-exo.tex
 	mv 4x3-puissances-exo.pdf '$(PDFDIR)'/4x3-puissances-exo.pdf
 
+3_ie:
+	pdflatex 4x3-puissances/4x3-puissances-ie.tex
+	pdflatex 4x3-puissances/4x3-puissances-ie.tex
+	mv 4x3-puissances-ie.pdf '$(PDFDIR)'/4x3-puissances-ie.pdf	
+
+# Chapitre 4 - Pythagore
+
+4_ie:
+	pdflatex 4x4-pythagore/4x4-pythagore-ie.tex
+	pdflatex 4x4-pythagore/4x4-pythagore-ie.tex
+	mv 4x4-pythagore-ie.pdf '$(PDFDIR)'/4x4-pythagore-ie.pdf	
+
 # nettoyage			
 proper:
 	rm -f *.log *.toc *.aux *.nav *.snm *.out *.bbl *.blg *.dvi
