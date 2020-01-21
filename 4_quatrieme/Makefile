@@ -66,6 +66,35 @@ img: $(FIGOBJ)
 	pdflatex 4x4-pythagore/4x4-pythagore-ie.tex
 	mv 4x4-pythagore-ie.pdf '$(PDFDIR)'/4x4-pythagore-ie.pdf	
 
+
+# Chapitre 5 - Expression litterale
+
+5_eq:
+	pdflatex 4x5-calcul-litteral-1/4x5-calcul-litteral-eq.tex
+	pdflatex 4x5-calcul-litteral-1/4x5-calcul-litteral-eq.tex
+	mv 4x5-calcul-litteral-eq.pdf '$(PDFDIR)'/4x5-calcul-litteral-eq.pdf
+
+
+5_cours:
+	pdflatex 4x5-calcul-litteral-1/4x5-calcul-litteral.tex
+	pdflatex 4x5-calcul-litteral-1/4x5-calcul-litteral.tex
+	mv 4x5-calcul-litteral.pdf '$(PDFDIR)'/4x5-calcul-litteral.pdf
+
+5_pp:
+	pdflatex 4x5-calcul-litteral-1/4x5-calcul-litteral-pp.tex
+	pdflatex 4x5-calcul-litteral-1/4x5-calcul-litteral-pp.tex
+	mv 4x5-calcul-litteral-pp.pdf '$(PDFDIR)'/4x5-calcul-litteral-pp.pdf
+
+
+5_ns:
+	pdflatex 4x5-calcul-litteral-1/4x5-calcul-litteral-ns.tex
+	pdflatex 4x5-calcul-litteral-1/4x5-calcul-litteral-ns.tex
+	mv 4x5-calcul-litteral-ns.pdf '$(PDFDIR)'/4x5-calcul-litteral-ns.pdf
+
+5_sci:
+	pdflatex 4x5-calcul-litteral-1/4x5-calcul-litteral-sci.tex
+	pdflatex 4x5-calcul-litteral-1/4x5-calcul-litteral-sci.tex
+	mv 4x5-calcul-litteral-sci.pdf '$(PDFDIR)'/4x5-calcul-litteral-sci.pdf	
 # nettoyage			
 proper:
 	rm -f *.log *.toc *.aux *.nav *.snm *.out *.bbl *.blg *.dvi
