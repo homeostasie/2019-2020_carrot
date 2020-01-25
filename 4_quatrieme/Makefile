@@ -13,20 +13,15 @@ target:
 all: img poly proper
 
 # Générations des images
-FIGSRC = $(wildcard 4x1-pythagore/sources/*.ipe 4x2-trigonometrie/sources/*.ipe 4x6-thales/sources/*ipe)
+FIGSRC = $(wildcard 4x4-pythagore/sources/*.ipe 4x2-trigonometrie/sources/*.ipe 4x6-thales/sources/*ipe)
 
 FIGOBJ = $(FIGSRC:.ipe=.pdf)
 
 img: $(FIGOBJ)
 
-4x1-pythagore/sources/%.pdf: 4x1-pythagore/sources/%.ipe
-	ipetoipe -pdf $<
-	
-4x2-trigonometrie/sources/%.pdf: 4x2-trigonometrie/sources/%.ipe
+4x4-pythagore/sources/%.pdf: 4x4-pythagore/sources/%.ipe
 	ipetoipe -pdf $<
 
-4x6-thales/sources/%.pdf: 4x6-thales/sources/%.ipe
-	ipetoipe -pdf $<	
 
 # Chapitre 1 - Nombres relatifs 1
 
@@ -61,10 +56,20 @@ img: $(FIGOBJ)
 
 # Chapitre 4 - Pythagore
 
+4_cours:
+	pdflatex 4x4-pythagore/4x4-pythagore.tex
+	pdflatex 4x4-pythagore/4x4-pythagore.tex
+	mv 4x4-pythagore.pdf '$(PDFDIR)'/4x4-pythagore.pdf
+
 4_ie:
 	pdflatex 4x4-pythagore/4x4-pythagore-ie.tex
 	pdflatex 4x4-pythagore/4x4-pythagore-ie.tex
-	mv 4x4-pythagore-ie.pdf '$(PDFDIR)'/4x4-pythagore-ie.pdf	
+	mv 4x4-pythagore-ie.pdf '$(PDFDIR)'/4x4-pythagore-ie.pdf
+
+4_ie_short:
+	pdflatex 4x4-pythagore/4x4-pythagore-ie-2.tex
+	pdflatex 4x4-pythagore/4x4-pythagore-ie-2.tex
+	mv 4x4-pythagore-ie-2.pdf '$(PDFDIR)'/4x4-pythagore-ie-2.pdf		
 
 
 # Chapitre 5 - Expression litterale
@@ -94,7 +99,12 @@ img: $(FIGOBJ)
 5_sci:
 	pdflatex 4x5-calcul-litteral-1/4x5-calcul-litteral-sci.tex
 	pdflatex 4x5-calcul-litteral-1/4x5-calcul-litteral-sci.tex
-	mv 4x5-calcul-litteral-sci.pdf '$(PDFDIR)'/4x5-calcul-litteral-sci.pdf	
+	mv 4x5-calcul-litteral-sci.pdf '$(PDFDIR)'/4x5-calcul-litteral-sci.pdf
+
+5_cs:
+	pdflatex 4x5-calcul-litteral-1/4x5-calcul-litteral-cs.tex
+	pdflatex 4x5-calcul-litteral-1/4x5-calcul-litteral-cs.tex
+	mv 4x5-calcul-litteral-cs.pdf '$(PDFDIR)'/4x5-calcul-litteral-cs.pdf		
 # nettoyage			
 proper:
 	rm -f *.log *.toc *.aux *.nav *.snm *.out *.bbl *.blg *.dvi
