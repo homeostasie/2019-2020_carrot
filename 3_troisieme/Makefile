@@ -93,6 +93,10 @@ img: $(FIGOBJ)
 	pdflatex 3x3-volumes-1/3x3-volumes-1-pb.tex 
 	mv 3x3-volumes-1-pb.pdf '$(PDFDIR)'/3x3-volumes-1-pb.pdf
 
+3x3-ie:
+	pdflatex 3x3-volumes-1/3x3-volumes-1-ie.tex 
+	pdflatex 3x3-volumes-1/3x3-volumes-1-ie.tex 
+	mv 3x3-volumes-1-ie.pdf '$(PDFDIR)'/3x3-volumes-1-ie.pdf
 
 # nettoyage			
 proper:
