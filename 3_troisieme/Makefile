@@ -98,6 +98,30 @@ img: $(FIGOBJ)
 	pdflatex 3x3-volumes-1/3x3-volumes-1-ie.tex 
 	mv 3x3-volumes-1-ie.pdf '$(PDFDIR)'/3x3-volumes-1-ie.pdf
 
+# Brevet blanc
+
+bb:
+	latex _bb/bb-2019.tex
+	dvips bb-2019.dvi
+	ps2pdf bb-2019.ps
+	
+	mv bb-2019.pdf '$(PDFDIR)'/bb-2019.pdf
+
+
+# Brevet blanc
+
+3c1:
+	pdflatex _continuite/3c1-continuite.tex 
+	pdflatex _continuite/3c1-continuite.tex 
+	mv 3c1-continuite.pdf '$(PDFDIR)'/3c1-continuite.pdf
+
+3bb1:
+	latex _continuite/3c1-bb1.tex
+	dvips 3c1-bb1.dvi
+	ps2pdf 3c1-bb1.ps
+	
+	mv 3c1-bb1.pdf '$(PDFDIR)'/3c1-bb1.pdf
+
 # nettoyage			
 proper:
 	rm -f *.log *.toc *.aux *.nav *.snm *.out *.bbl *.blg *.dvi

@@ -69,7 +69,12 @@ img: $(FIGOBJ)
 4_ie_short:
 	pdflatex 4x4-pythagore/4x4-pythagore-ie-2.tex
 	pdflatex 4x4-pythagore/4x4-pythagore-ie-2.tex
-	mv 4x4-pythagore-ie-2.pdf '$(PDFDIR)'/4x4-pythagore-ie-2.pdf		
+	mv 4x4-pythagore-ie-2.pdf '$(PDFDIR)'/4x4-pythagore-ie-2.pdf
+
+4_ie_long:
+	pdflatex 4x4-pythagore/4x4-pythagore-ie-3.tex
+	pdflatex 4x4-pythagore/4x4-pythagore-ie-3.tex
+	mv 4x4-pythagore-ie-3.pdf '$(PDFDIR)'/4x4-pythagore-ie-3.pdf
 
 
 # Chapitre 5 - Expression litterale
@@ -104,8 +109,21 @@ img: $(FIGOBJ)
 5_cs:
 	pdflatex 4x5-calcul-litteral-1/4x5-calcul-litteral-cs.tex
 	pdflatex 4x5-calcul-litteral-1/4x5-calcul-litteral-cs.tex
-	mv 4x5-calcul-litteral-cs.pdf '$(PDFDIR)'/4x5-calcul-litteral-cs.pdf		
-# nettoyage			
+	mv 4x5-calcul-litteral-cs.pdf '$(PDFDIR)'/4x5-calcul-litteral-cs.pdf
+
+4c1:
+	pdflatex _continuite/4c1-continuite.tex 
+	pdflatex _continuite/4c1-continuite.tex 
+	mv 4c1-continuite.pdf '$(PDFDIR)'/4c1-continuite.pdf
+
+4c1-exc:
+	latex _continuite/4c1-exc.tex
+	dvips 4c1-exc.dvi
+	ps2pdf 4c1-exc.ps
+	
+	mv 4c1-exc.pdf '$(PDFDIR)'/4c1-exc.pdf	
+
+# nettoyage		
 proper:
 	rm -f *.log *.toc *.aux *.nav *.snm *.out *.bbl *.blg *.dvi
 	rm -f *.backup *~
