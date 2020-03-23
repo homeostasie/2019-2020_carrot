@@ -121,7 +121,16 @@ img: $(FIGOBJ)
 	dvips 4c1-exc.dvi
 	ps2pdf 4c1-exc.ps
 	
-	mv 4c1-exc.pdf '$(PDFDIR)'/4c1-exc.pdf	
+	mv 4c1-exc.pdf '$(PDFDIR)'/4c1-exc.pdf
+
+
+4c2-exc:
+	latex _continuite/4c2-exc.tex
+	dvips 4c2-exc.dvi
+	ps2pdf 4c2-exc.ps
+	
+	mv 4c2-exc.pdf '$(PDFDIR)'/4c2-exc.pdf	
+
 
 # nettoyage		
 proper:
