@@ -139,6 +139,6 @@ bb:
 
 # nettoyage			
 proper:
-	rm -f *.log *.toc *.aux *.nav *.snm *.out *.bbl *.blg *.dvi
+	rm -f *.log *.toc *.aux *.nav *.snm *.out *.bbl *.blg *.dvi *.ps
 	rm -f *.backup *~
 	
