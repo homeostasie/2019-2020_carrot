@@ -98,6 +98,13 @@ img: $(FIGOBJ)
 	pdflatex 3x3-volumes-1/3x3-volumes-1-ie.tex 
 	mv 3x3-volumes-1-ie.pdf '$(PDFDIR)'/3x3-volumes-1-ie.pdf
 
+# Chapitre 6 - Thalès
+3x6:
+	pdflatex 3x6-thales/3x6-thales.tex
+	pdflatex 3x6-thales/3x6-thales.tex
+	mv 3x6-thales.pdf '$(PDFDIR)'/3x6-thales.pdf	
+
+
 # Brevet blanc
 
 bb:
