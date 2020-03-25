@@ -116,6 +116,11 @@ img: $(FIGOBJ)
 	pdflatex _continuite/4c1-continuite.tex 
 	mv 4c1-continuite.pdf '$(PDFDIR)'/4c1-continuite.pdf
 
+4cc1:
+	pdflatex _continuite/4c1-continuite-cor.tex 
+	pdflatex _continuite/4c1-continuite-cor.tex 
+	mv 4c1-continuite-cor.pdf '$(PDFDIR)'/4c1-continuite-cor.pdf
+
 4c1-exc:
 	latex _continuite/4c1-exc.tex
 	dvips 4c1-exc.dvi
