@@ -121,6 +121,10 @@ bb:
 	pdflatex _continuite/3c1-continuite.tex 
 	pdflatex _continuite/3c1-continuite.tex 
 	mv 3c1-continuite.pdf '$(PDFDIR)'/3c1-continuite.pdf
+3cc1:
+	pdflatex _continuite/3c1-continuite-cor.tex 
+	pdflatex _continuite/3c1-continuite-cor.tex 
+	mv 3c1-continuite-cor.pdf '$(PDFDIR)'/3c1-continuite-cor.pdf
 
 3bb1:
 	latex _continuite/3c1-bb1.tex
