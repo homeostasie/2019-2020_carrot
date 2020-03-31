@@ -141,6 +141,12 @@ bb:
 	
 	mv 3c2-bb2.pdf '$(PDFDIR)'/3c2-bb2.pdf	
 
+3bb3:
+	pdflatex _continuite/3c3-bb3.tex
+	pdflatex _continuite/3c3-bb3.tex
+	mv 3c3-bb3.pdf '$(PDFDIR)'/3c3-bb3.pdf
+
+
 # nettoyage			
 proper:
 	rm -f *.log *.toc *.aux *.nav *.snm *.out *.bbl *.blg *.dvi *.ps
