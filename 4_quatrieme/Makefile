@@ -134,7 +134,12 @@ img: $(FIGOBJ)
 	dvips 4c2-exc.dvi
 	ps2pdf 4c2-exc.ps
 	
-	mv 4c2-exc.pdf '$(PDFDIR)'/4c2-exc.pdf	
+	mv 4c2-exc.pdf '$(PDFDIR)'/4c2-exc.pdf
+
+4c3-exc:
+	pdflatex _continuite/4c3-exc.tex 
+	pdflatex _continuite/4c3-exc.tex 	
+	mv 4c3-exc.pdf '$(PDFDIR)'/4c3-exc.pdf		
 
 
 # nettoyage		
