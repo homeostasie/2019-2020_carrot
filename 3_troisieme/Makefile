@@ -141,10 +141,23 @@ bb:
 	
 	mv 3c2-bb2.pdf '$(PDFDIR)'/3c2-bb2.pdf	
 
+3cc2:
+	pdflatex _continuite/3c2-continuite-cor.tex 
+	pdflatex _continuite/3c2-continuite-cor.tex 
+	mv 3c2-continuite-cor.pdf '$(PDFDIR)'/3c2-continuite-cor.pdf
+
+
 3bb3:
 	pdflatex _continuite/3c3-bb3.tex
 	pdflatex _continuite/3c3-bb3.tex
 	mv 3c3-bb3.pdf '$(PDFDIR)'/3c3-bb3.pdf
+
+3bb4:
+	latex _continuite/3c4-bb4.tex
+	dvips 3c4-bb4.dvi
+	ps2pdf 3c4-bb4.ps
+
+	mv 3c4-bb4.pdf '$(PDFDIR)'/3c4-bb4.pdf
 
 
 # nettoyage			
