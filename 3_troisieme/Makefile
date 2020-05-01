@@ -115,7 +115,9 @@ bb:
 	mv bb-2019.pdf '$(PDFDIR)'/bb-2019.pdf
 
 
-# Brevet blanc
+# Continuité
+
+# Semaine 1
 
 3c1:
 	pdflatex _continuite/3c1-continuite.tex 
@@ -133,6 +135,7 @@ bb:
 	
 	mv 3c1-bb1.pdf '$(PDFDIR)'/3c1-bb1.pdf
 
+# Semaine 2
 
 3bb2:
 	latex _continuite/3c2-bb2.tex
@@ -147,10 +150,20 @@ bb:
 	mv 3c2-continuite-cor.pdf '$(PDFDIR)'/3c2-continuite-cor.pdf
 
 
+# Semaine 3
+
 3bb3:
 	pdflatex _continuite/3c3-bb3.tex
 	pdflatex _continuite/3c3-bb3.tex
 	mv 3c3-bb3.pdf '$(PDFDIR)'/3c3-bb3.pdf
+
+
+# Semaine 4
+
+3cc3:
+	pdflatex _continuite/3c3-continuite-cor.tex
+	pdflatex _continuite/3c3-continuite-cor.tex
+	mv 3c3-continuite-cor.pdf '$(PDFDIR)'/3c3-continuite-cor.pdf
 
 3bb4:
 	latex _continuite/3c4-bb4.tex
