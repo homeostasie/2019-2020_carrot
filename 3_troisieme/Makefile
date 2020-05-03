@@ -157,13 +157,14 @@ bb:
 	pdflatex _continuite/3c3-bb3.tex
 	mv 3c3-bb3.pdf '$(PDFDIR)'/3c3-bb3.pdf
 
-
-# Semaine 4
-
 3cc3:
 	pdflatex _continuite/3c3-continuite-cor.tex
 	pdflatex _continuite/3c3-continuite-cor.tex
 	mv 3c3-continuite-cor.pdf '$(PDFDIR)'/3c3-continuite-cor.pdf
+
+
+
+# Semaine 4
 
 3bb4:
 	latex _continuite/3c4-bb4.tex
@@ -171,6 +172,14 @@ bb:
 	ps2pdf 3c4-bb4.ps
 
 	mv 3c4-bb4.pdf '$(PDFDIR)'/3c4-bb4.pdf
+
+
+# Semaine 5
+
+3cc5:
+	pdflatex _continuite/3c5-continuite-cor.tex
+	pdflatex _continuite/3c5-continuite-cor.tex
+	mv 3c5-continuite-cor.pdf '$(PDFDIR)'/3c5-continuite-cor.pdf
 
 
 # nettoyage			
